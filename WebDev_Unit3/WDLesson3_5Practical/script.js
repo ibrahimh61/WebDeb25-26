@@ -4,7 +4,7 @@
       3) Display the results in the appropriate element
 */
 function recArea(){
-
+      let l
 }
 
 function recPerimeter(){
@@ -20,6 +20,9 @@ function recPerimeter(){
 let pi = 3.1415926;
 
 function cirArea(){
+      let r = parseFloat(document.getElementById("rad").value);
+      let op = document.getElementById("output")
+      let A = 
 
 }
 
