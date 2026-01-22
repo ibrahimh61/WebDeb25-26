@@ -9,5 +9,20 @@ op.innerHTML="The average of all 3 grades is ${avg}";
 }
 
 // Challenge 4:  Create the function for the Slope program.  Refer to the resource link in the HTML for assistance.
-
+function slope(){
+let x1= parseFloat(document.getElementById("x1").value);
+let y1= parseFloat(document.getElementById("y1").value);
+let x2= parseFloat(document.getElementById("x2").value);
+let y2= parseFloat(document.getElementById("y2").value);
+let op = document.getElementById("op");
+let s = (y2 - y1)/(x2-x1)
+op.innerHTML=`The slope between points (${x1},${y1}) and (${x2},${y2}) is ${s}`;
+}
 // Challenge 6:  Create the function for the BMI program.  Refer to the resource link in the HTML for assistance.
+function bmi(){
+let h= parseFloat(document.getElementById("h").value);
+let w= parseFloat(document.getElementById("w").value);
+let out = document.getElementById("out");
+let bmi = w/((h)**2)
+out.innerHTML=`Your BMI is ${bmi}`;
+}
