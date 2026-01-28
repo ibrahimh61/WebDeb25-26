@@ -17,6 +17,15 @@ function calcDist(){
       2) Perform the necessary calculations
       3) Display the results in the appropriate element
 */
+function calcCI(){
+   let p= parseFloat(document.getElementById("p").value); 
+   let rate= parseFloat(document.getElementById("rate").value);   
+   let n= parseFloat(document.getElementById("n").value);   
+   let t= parseFloat(document.getElementById("t").value);   
 
+   let a= p*(Math.pow((1+(rate/n),n*t)));
+   let op= document.getElementById("out");
+   op.innerHTML=`Your compound interest in ${n} years is ${a}`; 
+}
 
 
