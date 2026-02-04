@@ -13,16 +13,16 @@
 
 
         // Challenge 9: If the language is equal to "Spanish", set house to "casa"
-if (lang==Spanish){
+if (lang=="Spanish"){
   house=`Casa`;
 }
         // Challenge 10: Make a similar decision for the other two languages in the drop down.
-if (lang==Chinese){
-  house=`Fángzǐ`;
+if (lang=="Chinese"){
+  house=`房子 or Fángzǐ`;
 }
 
-if (lang==Korean){
-  house=`Jip`;
+if (lang=="Korean"){
+  house=`집 or Jib`;
 }
         // Challenge 11: Display an appropriate message stating "house" in the specified language is given translation.            
 output.innerHTML=`House in ${lang} is ${house}`;
@@ -54,7 +54,7 @@ output.innerHTML=`House in ${lang} is ${house}`;
           <option>Spanish</option>
           <!-- Challenge 8: Add two more language as shown above -->
            <option>Chinese</option>
-          <option>Arabic</option>
+          <option>Korean</option>
         </select>
         <input type="button" onclick="translateHouse()" value="Translate">
         <div id="output"></div>        
